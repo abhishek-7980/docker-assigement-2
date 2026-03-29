@@ -1,8 +1,16 @@
 pipeline {
     agent {
+<<<<<<< HEAD
         label 'Slave-1'
         customWorkspace '/mnt/Jenkins-slave'
     }	
+=======
+        node {
+            label 'Slave-1'
+            customWorkspace '/mnt/Jenkins-slave'
+        }
+    }
+>>>>>>> a832a90 (Added Jenkinsfil)
 
     stages {
 
@@ -10,7 +18,7 @@ pipeline {
             steps {
                 git branch: 'main', url: 'https://github.com/abhishek-7980/docker-assigement-2.git'
             }
-        } 
+        }
 
         stage('Cleanup Old Containers') {
             steps {
@@ -52,4 +60,3 @@ pipeline {
         }
     }
 }
-
