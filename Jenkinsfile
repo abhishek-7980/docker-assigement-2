@@ -1,8 +1,10 @@
 pipeline {
     agent {
-            label 'Slave-1'
-            customWorkspace '/mnt/Jenkins-slave'
-        }
+        label 'Slave-1'
+    }
+
+    options {
+        customWorkspace '/mnt/Jenkins-slave'
     }
     stages {
 
@@ -51,4 +53,4 @@ pipeline {
             }
         }
     }
-
+}
