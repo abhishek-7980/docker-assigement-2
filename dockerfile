@@ -8,7 +8,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/abhishek-7980/docker-assigement-1.git'
+                git branch: 'main', url: 'https://github.com/abhishek-7980/docker-assigement-2.git'
             }
         } 
 
