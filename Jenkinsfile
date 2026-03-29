@@ -1,9 +1,5 @@
 pipeline {
     agent {
-        label 'Slave-1'
-        customWorkspace '/mnt/Jenkins-slave'
-    }
-        node {
             label 'Slave-1'
             customWorkspace '/mnt/Jenkins-slave'
         }
