@@ -1,17 +1,13 @@
 pipeline {
     agent {
-<<<<<<< HEAD
         label 'Slave-1'
         customWorkspace '/mnt/Jenkins-slave'
-    }	
-=======
+    }
         node {
             label 'Slave-1'
             customWorkspace '/mnt/Jenkins-slave'
         }
     }
->>>>>>> a832a90 (Added Jenkinsfil)
-
     stages {
 
         stage('Clone Repo') {
