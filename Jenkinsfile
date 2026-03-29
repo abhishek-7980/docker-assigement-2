@@ -1,8 +1,9 @@
 pipeline {
-        agent {
-            label 'Slave-1'
-            customWorkspace '/mnt/Jenkins-slave'
-    }    
+    agent {
+        label 'Slave-1'
+        customWorkspace '/mnt/Jenkins-slave'
+    }
+
     stages {
 
         stage('Clone Repo') {
